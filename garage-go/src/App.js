@@ -1,20 +1,37 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './Component/Header.js';
+import Footer from './Component/Footer.js';
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+
+
+      {/* <RENDER ME HERE !!!!!! you have to render me /> */}
+      <Header/>
+      {/* deleted this header code because I now have header.js */}
+
+
+
+          {/* materialize card */}
+
+
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+
+
+        <Footer/>
+      
+
       </div>
     );
+
   }
 }
 

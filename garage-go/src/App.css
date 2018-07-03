@@ -26,3 +26,34 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  border: 5px solid 
+}
+
+#left-side {
+  float:left;
+  border: 25px solid green;
+  padding: 100px;
+  margin: 25px;
+
+}
+
+
+#right-side {
+  float:right;
+  border: 25px solid green;
+  padding: 100px;
+  margin: 25px;
+
+}
+
+
+
+
+
