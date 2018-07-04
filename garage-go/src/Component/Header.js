@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from '../logo.svg';
 
-import Guest from './Guest.js';
-import SignIn from './SignIn.js';
+
+// we don't want here because WE WANT STATIC HEADER. 
+//import Guest from './Guest.js';
+//import SignIn from './SignIn.js';
+//import MapButton from './MapButton.js';
 
 //. dot goes sideways. 
 //.. dot dot goes up a folder then looks sideways. 
@@ -19,8 +22,9 @@ const Header = (props) => (
 
             <header className="App-header">
 {/* calling GUEST AND SINGIN */}
-<Guest/>
-<SignIn/>
+{/* <Guest/> */}
+{/* <SignIn/> */}
+{/* <MapButton/> */}
               <img src={logo} className="App-logo" alt="logo" /> 
               {/* logo is the logo React in the middle */}
               <h1 className="App-title">GarageGo</h1>
