@@ -7,6 +7,9 @@ import Footer from '../Component/Footer.js';
 import SignIn from '../Component/SignIn.js';
 //SignIn Import.
 import Guest from '../Component/Guest.js';
+// now import Map. 
+import Map from '../Component/MapButton.js';
+
 
 
 
@@ -15,12 +18,12 @@ class App extends Component {
       return (
         <div className="App">
   
-  
+      <SignIn/><Guest/>
         {/* <RENDER ME HERE !!!!!! you have to render me /> */}
-        <Header/> <SignIn/> <Guest/>
+      <Map/><Header/>
         {/* deleted this header code because I now have header.js */}
   
-  
+
   
             {/* materialize card */}
   
