@@ -3,6 +3,9 @@ import logo from '../logo.svg';
 import '../App.css';
 import Header from '../Component/Header.js';
 import Footer from '../Component/Footer.js';
+//import GuestButton..
+import AreYouSureYouAGuest from '../Component/AreYouSureYouAGuest.js';
+
 
 
 class App extends Component {
@@ -12,7 +15,7 @@ class App extends Component {
   
   
         {/* <RENDER ME HERE !!!!!! you have to render me /> */}
-        <Header/>
+        <Header/><AreYouSureYouAGuest/>
         {/* deleted this header code because I now have header.js */}
   
   
