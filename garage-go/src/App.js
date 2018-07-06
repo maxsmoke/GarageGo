@@ -24,7 +24,19 @@ const App = () => (
         <Route exact path="/SignInPage" component={SignInPage} />
         <Route exact path="/PostGarageSale" component={PostGarageSale} />
    
-      <Footer />
+
+
+{/* the regular HTML would work too */}
+        {/* <div>
+            "hello"
+        </div>
+        <div>
+            "hey"
+        </div>
+    </footer>
+    </div> */}
+   {/* EVERYTHING HERE WILL SHOW UP ON EVERYPAGE BECAUSE ITS APP.JS */}
+        <Footer title="2018 Copyright" desc="Garage Sale Not Currently Taking Work Applications"/>
     </div>
   </Router>
 );

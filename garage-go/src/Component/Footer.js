@@ -6,13 +6,34 @@ const Footer = (props) => (
 
     //this is HTML. 
     // SO THIS HAS TO BE LOWER CASE THE F because if caps it think otherwise. 
-    <footer className="page-footer">2018 Copyright</footer>
+
+
+// 
+
+
+
+    <footer className="page-footer">
+        <div>
+            {props.title}
+        </div>
+        <div>
+            {props.desc}
+        </div>
+    </footer>
 )
 
 
 export default Footer;
 
-
+{/* <footer className="page-footer">
+<div>
+    "hello"
+</div>
+<div>
+    "hey"
+</div>
+</footer>
+) */}
 
 
 

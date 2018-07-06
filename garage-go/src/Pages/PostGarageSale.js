@@ -4,18 +4,29 @@ import '../App.css';
 import Header from '../Component/Header.js';
 import Footer from '../Component/Footer.js';
 //import GuestButton..
-import PostGarageSale from '../Component/PostGarageSale.js';
+import PostItems from '../Component/PostItems.js';
 
 
 
-class App extends Component {
+class PostGarageSale extends Component {
+    state = {
+      current: "Here is where you will do the actual post."
+    }
+
+    postSale = () => {
+      this.setState({
+        current: "You clicked the button"
+      })
+    }
+
     render() {
       return (
         <div className="App">
   
   
         {/* <RENDER ME HERE !!!!!! you have to render me /> */}
-        <Header/> <PostGarageSale/>
+        <Header/> 
+        <PostItems click={this.postSale} desc={this.state.current}/>
         {/* deleted this header code because I now have header.js */}
         <form>
   <label>
@@ -34,7 +45,7 @@ class App extends Component {
           </p>
   
   
-          <Footer/>
+          
         
   
         </div>
@@ -43,4 +54,4 @@ class App extends Component {
     }
   }
   
-  export default App;
+  export default PostGarageSale;
