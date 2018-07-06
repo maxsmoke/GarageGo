@@ -10,6 +10,7 @@ import GuestPage from './Pages/GuestPage.js';
 import MapPage from './Pages/MapPage.js';
 import SignInPage from './Pages/SignInPage';
 import About from './Pages/About.js';
+import PostGarageSale from './Pages/PostGarageSale.js';
 
 
 
@@ -21,6 +22,7 @@ const App = () => (
         <Route exact path="/GuestPage" component={GuestPage} />
         <Route exact path="/MapPage" component={MapPage} />
         <Route exact path="/SignInPage" component={SignInPage} />
+        <Route exact path="/PostGarageSale" component={PostGarageSale} />
    
       <Footer />
     </div>
