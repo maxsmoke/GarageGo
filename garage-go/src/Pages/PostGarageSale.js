@@ -17,7 +17,13 @@ class App extends Component {
         {/* <RENDER ME HERE !!!!!! you have to render me /> */}
         <Header/> <PostGarageSale/>
         {/* deleted this header code because I now have header.js */}
-  
+        <form>
+  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+  <input type="submit" value="Submit" />
+</form>
   
   
             {/* materialize card */}
