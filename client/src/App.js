@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Saved from "./pages/Saved";
-import Profile from "./pages/Profile";
-import Events from "./pages/Events";
+import CreateProfile from "./pages/CreateProfile";
+import EventDetail from "./pages/EventDetail";
+import CreateEvent from "./pages/CreateEvent";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 
@@ -14,8 +15,9 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/saved" component={Saved} />
-        <Route exact path="/profile" component={Profile}/>
-        <Route exact path="/create-event" component={Events}/>
+        <Route exact path="/profile" component={CreateProfile}/>
+        <Route exact path="/create-event" component={CreateEvent}/>
+        <Route exact path="/event-detail" component={EventDetail}/>>
         <Route component={NoMatch} />
       </Switch>
     </div>
