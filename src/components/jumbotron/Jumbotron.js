@@ -1,8 +1,8 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
-import Jumbotron from './components/jumbotron/Jumbotron.css'
+// import { Jumbotron, Button } from 'reactstrap';
+import Jumbotron from './Jumbotron.css'
 
-const Example = (props) => {
+const Jumbotron = (props) => {
   return (
     <div>
       <Jumbotron>
@@ -18,4 +18,4 @@ const Example = (props) => {
   );
 };
 
-export default Example;
+export default Jumbotron;
