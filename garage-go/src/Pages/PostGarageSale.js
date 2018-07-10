@@ -6,7 +6,9 @@ import Footer from '../Component/Footer.js';
 //import GuestButton..
 import PostItems from '../Component/PostItems.js';
 
-
+//my form start
+import Form from '../Component/Form.js';
+//my from start
 
 class PostGarageSale extends Component {
     state = {
@@ -28,7 +30,14 @@ class PostGarageSale extends Component {
         <Header/> 
         <PostItems click={this.postSale} desc={this.state.current}/>
         {/* deleted this header code because I now have header.js */}
+
+
+
+
         <form>
+
+
+
   <label>
     Name:
     <input type="text" name="name" />
@@ -43,9 +52,11 @@ class PostGarageSale extends Component {
           <p className="App-intro">
             <code>Welcome to your first post</code>
           </p>
-  
+  <Form />
         <h1>Welcome to your first post</h1>
         
+          <p> run run run </p>
+          
         
   
         </div>
