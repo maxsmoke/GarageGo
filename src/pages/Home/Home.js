@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import { Jumbotron, Button } from 'reactstrap';
+import {Link} from 'react-router-dom';
 import './Home.css';
-// import './HomeBackground';
 
+// import './HomeBackground';
 
 
 class Home extends Component {
@@ -18,10 +19,13 @@ class Home extends Component {
                     <p className="Intro">This is where you will find any and all future garage sales in your area.</p>
                     <p>Click down below to learn more</p>
                     <p className="lead">
-                    <Button onClick ={this.buttonClicked}>Learn More</Button>
+                    <Link to={"/LearnMoreTest"}>
+                    <Button onClick ={this.buttonClicked}>Learn More
+                    </Button>
+                    </Link>
+                    
                     </p>
                     <hr className="my-2" />
-
                 </Jumbotron>
             </div>
 

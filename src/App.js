@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+
 import './App.css';
 // import Jumbotron from "./Jumbotron";
 import Home from './pages/Home';
+import LearnMoreTest from './pages/LearnMoreTest';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-     <Home>
+   
+     <BrowserRouter>
+       <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/LearnMoreTest" component={LearnMoreTest} />
+      </Switch>
+    </BrowserRouter>
         
-        </Home>
-      </div>
+   
     );
   }
 }
