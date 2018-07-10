@@ -41,11 +41,11 @@ class PostGarageSale extends Component {
   
   
           <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
+            <code>Welcome to your first post</code>
           </p>
   
-  
-          
+        <h1>Welcome to your first post</h1>
+        
         
   
         </div>
