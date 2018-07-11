@@ -12,23 +12,6 @@ body {
 /*  */
 
 
-
-
-
-
-
-
-
-
-
-
-
-.formfield {
-    
-width:300px !important;}
-
-
-
 input,textarea,select,button {
 
     text-align: unset;
@@ -38,19 +21,6 @@ input,textarea,select,button {
 
 
 .centerBox {
- width: 350px;
-border: 1px solid black; 
-margin: 10px;
-
-
-}
-
-.typeitinBox {
-    width: 350px;
     border: 1px solid black; 
     margin: 10px;
-    
-    
-
-
 }

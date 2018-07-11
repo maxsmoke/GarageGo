@@ -15,24 +15,15 @@ export default class Form extends React.Component {
 render () {
 return(
 
-    <div className = "centerBox col s15">
-    <form>
-        <input className="formfield" placeholder="Upload Pictures"
-        value={this.state.FirstName}
-         onChange={e => this.setState({ firstName: e.target.value})}
-          />
-       
-        
-          
-
-
-<button onClick={e => this.onSubmit(e)}>Upload Image</button>
-
+    <div className = "centerBox">
+        <form>
+            <input className="formfield" placeholder="Upload Pictures"
+            value={this.state.FirstName}
+            onChange={e => this.setState({ firstName: e.target.value})}
+            />
+            <button onClick={e => this.onSubmit(e)}>Upload Image</button>
         </form>
-
-
-
-</div>
+    </div>
         
 
 

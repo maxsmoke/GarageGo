@@ -30,47 +30,25 @@ class PostGarageSale extends Component {
 
     render() {
       return (
-        
         <div className="App">
-        
-        <Header />
-        
+          <Header />
+          <br/><br/><br/>
           <div class="container">
             <div class="row">
               <div class="col s4">
-
-             
-
-
-            .
-<Form />
-
+                <Form />
               </div>
-              
-              <div class="col s8">
-              
-              .
-<Writeinthebox />
-
+              <div class="col s4">    
+                <Writeinthebox />
               </div>
-              
-              <div class="col s6 offset-s10 ">
-              
-<Uploadpictures />
-              {/* when any button is clicked I want a green image checkbox to confirm that it went to database correctly */}
-              
+              <div class="col s4">
+                <Uploadpictures />
+                {/* when any button is clicked I want a green image checkbox to confirm that it went to database correctly */}
               </div>
-             
             </div>
-            
-          </div>
-          
-  </div>
-         
-         
-      
+          </div>   
+        </div>
       );
-  
     }
   }
 
