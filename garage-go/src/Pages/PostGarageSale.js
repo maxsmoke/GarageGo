@@ -28,54 +28,28 @@ class PostGarageSale extends Component {
 
     render() {
       return (
-        <div className="App">
-  
-  
-        {/* <RENDER ME HERE !!!!!! you have to render me /> */}
-        <Header/> 
         
-         
-        <PostItems click={this.postSale} desc={this.state.current}/>
-        {/* deleted this header code because I now have header.js */}
+        <div className="App">
+        <Header />
+          <div class="container">
+            <div class="row">
+              <div class="col s4">
+            Enter your data
+<Form />
 
+              </div>
+              <div class="col s8">
+              Write your description here
 
-
-
-        <form>
-
- 
-       
-
- 
-</form>
-  
-  
-            {/* materialize card */}
-  <write>
-  
-          <p className="App-intro">
-            <code>Welcome to your first post</code>
-            
-          </p>
-          
-          </write>
-          
-  <Form />                
- 
-        <h1>Welcome to your first post</h1>
-       
-          <p> run run run </p>
-  <Writeinthebox />
-         
-         
- 
- 
-        </div>
-  
+<Writeinthebox />
+              </div>
+            </div>
+          </div>
+  </div>
          
       );
   
     }
   }
-  
+
   export default PostGarageSale;

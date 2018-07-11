@@ -30,7 +30,7 @@ onSubmit = e => {
 render () {
 return(
 
-    <div className = "centerBox col s4">
+    <div className = "centerBox col s15">
     <form>
         <input className="formfield" placeholder="First name"
         value={this.state.FirstName}
