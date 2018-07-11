@@ -10,6 +10,11 @@ import PostItems from '../Component/PostItems.js';
 import Form from '../Component/Form.js';
 //my from start
 
+//middle textbox
+import Writeinthebox from '../Component/Writeinthebox.js';
+//middle textbox
+
+
 class PostGarageSale extends Component {
     state = {
       current: "Here is where you will do the actual post."
@@ -28,6 +33,8 @@ class PostGarageSale extends Component {
   
         {/* <RENDER ME HERE !!!!!! you have to render me /> */}
         <Header/> 
+        
+         
         <PostItems click={this.postSale} desc={this.state.current}/>
         {/* deleted this header code because I now have header.js */}
 
@@ -36,30 +43,36 @@ class PostGarageSale extends Component {
 
         <form>
 
+ 
+       
 
-
-  <label>
-    Name:
-    <input type="text" name="name" />
-  </label>
-  <input type="submit" value="Submit" />
+ 
 </form>
   
   
             {/* materialize card */}
-  
+  <write>
   
           <p className="App-intro">
             <code>Welcome to your first post</code>
+            
           </p>
-  <Form />
-        <h1>Welcome to your first post</h1>
-        
-          <p> run run run </p>
           
-        
-  
+          </write>
+          
+  <Form />                
+ 
+        <h1>Welcome to your first post</h1>
+       
+          <p> run run run </p>
+  <Writeinthebox />
+         
+         
+ 
+ 
         </div>
+  
+         
       );
   
     }

@@ -30,29 +30,38 @@ onSubmit = e => {
 render () {
 return(
 
-    <div className = "centerBox col s4">
+    <div class="container">
+<div class="row"> 
+{/* container above moved it a litte to the right */}
+
+
+
+
+    <div className = "typeitinBox  col 8" style={{display: 'inlineBlock'}}>
+    {/* CALL S8 */}
+    {/* changed typeintheBox to centerBox and it did the black line */}
     <form>
-        <input className="formfield" placeholder="First name"
+        <input className="formfield" placeholder="TEST"
         value={this.state.FirstName}
          onChange={e => this.setState({ firstName: e.target.value})}
           />
         <br />
-        <input className="formfield" placeholder="Last name"
+        <input className="formfield" placeholder="TEST"
         value={this.state.FirstName}
          onChange={e => this.setState({ lastName: e.target.value})}
           />
         <br />
-        <input className="formfield" placeholder="Email"
+        <input className="formfield" placeholder="TEST"
         value={this.state.FirstName}
          onChange={e => this.setState({ email: e.target.value})}
           />
         <br />
-        <input className="formfield" placeholder="Username"
+        <input className="formfield" placeholder="TEST"
         value={this.state.FirstName}
         onChange={e => this.setState({ Username: e.target.value})}
          />
         <br />
-        <input className="formfield" placeholder="Password"
+        <input className="formfield" placeholder="TEST"
         value={this.state.FirstName}
          onChange={e => this.setState({ Password: e.target.value})}
           />
@@ -65,8 +74,14 @@ return(
 
 
 </div>
-        
 
+
+        </div>
+{/* 76 closes ROW */}
+
+
+
+</div> //closes container.
 
 
         
@@ -77,7 +92,6 @@ return(
 }
 }
 
-//car
 
 
 

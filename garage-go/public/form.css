@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formfield {
+    
+width:300px !important;}
+
+
+
+input,textarea,select,button {
+
+    text-align: unset;
+    background-color: green;
+}
+
+
+
+.centerBox {
+ width: 350px;
+border: 1px solid black; 
+margin: 10px;
+
+
+}
+
+.typeitinBox {
+    width: 350px;
+    border: 1px solid black; 
+    margin: 10px;
+    
+    
+
+
+}
