@@ -13,6 +13,8 @@ import Form from '../Component/Form.js';
 //middle textbox
 import Writeinthebox from '../Component/Writeinthebox.js';
 //middle textbox
+import Uploadpictures from '../Component/Uploadpictures.js';
+
 
 
 class PostGarageSale extends Component {
@@ -30,23 +32,43 @@ class PostGarageSale extends Component {
       return (
         
         <div className="App">
+        
         <Header />
+        
           <div class="container">
             <div class="row">
               <div class="col s4">
-            Enter your data
+
+             
+
+
+            .
 <Form />
 
               </div>
+              
               <div class="col s8">
-              Write your description here
-
+              
+              .
 <Writeinthebox />
+
               </div>
+              
+              <div class="col s6 offset-s10 ">
+              
+<Uploadpictures />
+              {/* when any button is clicked I want a green image checkbox to confirm that it went to database correctly */}
+              
+              </div>
+             
             </div>
+            
           </div>
+          
   </div>
          
+         
+      
       );
   
     }

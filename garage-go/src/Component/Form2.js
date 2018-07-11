@@ -1,7 +1,8 @@
 import React from 'react';
+// this is a copy of Form.js 
+// You can use this text box that will receive UserDate and send it to an Array where Gian can fetch the data. 
+// this is basically a sign in sheet that is working.
 
-// this is EVENT LOCATION: 
-// THIS IS THE EVENT LOCATION INSIDE POST GARAGE SALE AS MENTIONED IN MOQUPS
 
 export default class Form extends React.Component {
 
@@ -33,33 +34,33 @@ return(
 
     <div className = "centerBox col s15">
     <form>
-        <input className="formfield" placeholder="Address 1"
+        <input className="formfield" placeholder="First name"
         value={this.state.FirstName}
          onChange={e => this.setState({ firstName: e.target.value})}
           />
         <br />
-        <input className="formfield" placeholder="Address 2"
+        <input className="formfield" placeholder="Last name"
         value={this.state.FirstName}
          onChange={e => this.setState({ lastName: e.target.value})}
           />
         <br />
-        <input className="formfield" placeholder="City"
+        <input className="formfield" placeholder="Email"
         value={this.state.FirstName}
          onChange={e => this.setState({ email: e.target.value})}
           />
         <br />
-        <input className="formfield" placeholder="State"
+        <input className="formfield" placeholder="Username"
         value={this.state.FirstName}
         onChange={e => this.setState({ Username: e.target.value})}
          />
         <br />
-        <input className="formfield" placeholder="Zip Code"
+        <input className="formfield" placeholder="Password"
         value={this.state.FirstName}
          onChange={e => this.setState({ Password: e.target.value})}
           />
 
 
-<button onClick={e => this.onSubmit(e)}>Submit Event Location</button>
+<button onClick={e => this.onSubmit(e)}>Submit</button>
 
         </form>
 
