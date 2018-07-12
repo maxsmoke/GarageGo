@@ -2,7 +2,11 @@
     color: red;
 }
 
-body {
-    background-image: "yard-sale.jpg";
+.bg {
+    size: cover;
 
+
+}
+body{
+    background-image: url('../../assets/yard-sale.jpg');
 }
