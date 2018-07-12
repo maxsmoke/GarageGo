@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import { Jumbotron, Button } from 'reactstrap';
-import './Home.css'
+import './Home.css';
+import { MyMapComponent } from '../../components/map/map.js';
+// import EventList from '../../components/EventList/EventList.js';
 
 class Home extends Component {
     render () {
@@ -16,6 +18,8 @@ class Home extends Component {
                     <hr className="my-2" />
 
                 </Jumbotron>
+                <MyMapComponent />
+                {/* <EventList /> */}
             </div>
 
         )
