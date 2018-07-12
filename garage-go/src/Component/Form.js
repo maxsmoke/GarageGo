@@ -1,5 +1,5 @@
 import React from 'react';
-
+import axios from 'axios';
 // this is EVENT LOCATION: 
 // THIS IS THE EVENT LOCATION INSIDE POST GARAGE SALE AS MENTIONED IN MOQUPS
 
@@ -24,7 +24,40 @@ onSubmit = e => {
     e.preventDefault();
     console.log(this.state);
     //see the value of what is submitted.
+
+// axios
+
+const user = {
+    name: this.state.name
+  };
+
+// axios takes two argumets. THE ROUTE WHERE UPLOAD STUFF TOO OR GETTING STUFF FROM
+// SECOND arguments, what do i put in.   (data)
+console.log("Axios está trabajando")
+//GIAN FETCH THE DATA FROM AXIOS HERE 
+// GIAN HERE IS AXIOS, FETCH THE DATA BY CONNECTING IT. 
+axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+//axios
+
+
+
+
 }
+
+
+// my first axios. send up
+
+
+  
+
+
+//my first axios. send up
+
+
 
 
 
@@ -59,11 +92,11 @@ return(
           />
 
 
-<button onClick={e => this.onSubmit(e)}>Submit Event Location</button>
+<button onClick={e => this.onSubmit(e)}>Submit 1st</button>
 
         </form>
 
-
+{/* need to import axios & also use handler event TO SET THE STATE AND USE ON SUBMIT TO CALL AXIOS */}
 
 </div>
         

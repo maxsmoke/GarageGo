@@ -33,16 +33,17 @@ class PostGarageSale extends Component {
         <div className="App">
           <Header />
           <br/><br/><br/>
-          <div class="container">
-            <div class="row">
-              <div class="col s4">
+          <div className="container">
+            <div className="row">
+              <div className="col s4">
                 <Form />
               </div>
-              <div class="col s4">    
+              <div className="col s4">    
                 <Writeinthebox />
               </div>
-              <div class="col s4">
+              <div className="col s4">
                 <Uploadpictures />
+               
                 {/* when any button is clicked I want a green image checkbox to confirm that it went to database correctly */}
               </div>
             </div>
