@@ -15,20 +15,35 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     create: function (request, response) {
+        //applies to event schema
         const event = {
             _id: request.body._id,
             start_date: request.body.start_date,
             end_date: request.body.end_date,
-            //will rewrite below
-            address: request.body.address,
+
+            active: true
+        }
+        //applies to address schema
+        const eventAddress = {
+
+            _profileid: request.body._id,
+            street: request.body.street,
+            city: request.body.city,
+            state: request.body.state,
+            zip: request.body.zip,
             active: true
         }
         //need to create an address schema also need to 
         //rewrite the address part of event so that it includes a address schema
-        // will rewrite below
+        // will rewrite line 29 - 32 soon
         db.Event
             .create(event)
             .then(dbEvent => response.json(dbEvent))
+            .catch(err => res.status(422).json(err));
+
+        db.Event
+            .create(eventAddress)
+            .then(dbEventAddress => response.json(dbEventAddress))
             .catch(err => res.status(422).json(err));
     },
     update: function (request, response) {
@@ -39,9 +54,9 @@ module.exports = {
     },
     remove: function (request, response) {
         db.Event
-        .findById({_id: request.params.id})
-        .then(dbEvent => dbEvent.remove())
-        .then(dbEvent => response.json(dbEvent))
-        .catch(err => res.status(422).json(err));
+            .findById({ _id: request.params.id })
+            .then(dbEvent => dbEvent.remove())
+            .then(dbEvent => response.json(dbEvent))
+            .catch(err => res.status(422).json(err));
     },
 }

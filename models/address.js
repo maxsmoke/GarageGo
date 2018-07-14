@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const profileSchema = new Schema({
-    _id: { type: Schema.Types.ObjectId, required: true },
+    _profileid: { 
+        type: Schema.Types.ObjectId, ref:"Profile" },
 street:{
     type: String, required: true
 },
@@ -19,8 +20,6 @@ zip:{
 active:{
     type: Boolean, require: true
 }
-},{
-    _id: false
 });
 
 const Profile = mongoose.model("Profile", profileSchema);
