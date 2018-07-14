@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { Jumbotron, Button } from 'reactstrap';
-import { MyMapComponent } from '../../components/map/map.js';
+import SimpleMap from '../../components/map/map.js';
 // import EventList from '../../components/EventList/EventList.js';
 import {Link} from 'react-router-dom';
 import './Home.css';
@@ -29,14 +29,12 @@ class Home extends Component {
                     </p>
                     <hr className="my-2" />
                 </Jumbotron>
-                <MyMapComponent />
+                <SimpleMap />
                 {/* <EventList /> */}
             </div>
 
         )
-
     }
-
 }
 
 export default Home;
