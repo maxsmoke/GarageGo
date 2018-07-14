@@ -1,3 +1,8 @@
 .Jumbotron h1 {
     width: 50%;
 }
+
+.Jumbotron body{
+    background-image: url('../../assets/yard-sale.jpg');
+
+}
