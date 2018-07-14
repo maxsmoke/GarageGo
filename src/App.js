@@ -5,11 +5,24 @@ import './App.css';
 import Home from './pages/Home';
 import LearnMoreTest from './pages/LearnMoreTest';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Calendar  from './components/Calendar';
 
 
 class App extends Component {
   render() {
     return (
+
+      <div className="App">
+        <header>
+          <div id="logo">
+            <span className="icon">date_range</span>
+            <span>
+             
+            </span>
+          </div>
+        </header>
+        <main>
+         </main>
    
      <BrowserRouter>
        <Switch>
@@ -17,7 +30,9 @@ class App extends Component {
       <Route exact path="/LearnMoreTest" component={LearnMoreTest} />
       </Switch>
     </BrowserRouter>
-        
+    <Calendar />
+    </div>
+
    
     );
   }

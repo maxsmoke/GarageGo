@@ -27,6 +27,8 @@ class Home extends Component {
                     </p>
                     <hr className="my-2" />
                 </Jumbotron>
+               
+
             </div>
 
         )
