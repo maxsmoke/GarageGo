@@ -53,7 +53,26 @@ console.log(this.state.pictureUpload)
 
 
 uploadHandler = (event) => { 
+    const user = {
+        name: this.state.name
+      };
+
+      console.log("Axios está trabajando")
+      //GIAN FETCH THE DATA FROM AXIOS HERE 
+      // GIAN HERE IS AXIOS, FETCH THE DATA BY CONNECTING IT. 
+      axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
+            .then(res => {
+              console.log(res);
+              console.log(res.data);
+            })
+      //axios
+
+
+
     event.preventDefault()
+
+
+
   console.log(this.state.pictureUpload)
 // event.preventDefault is a function you need ()
 //changed selectedFile on line 36 as well to pictureUpload. 
