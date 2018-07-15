@@ -12,10 +12,10 @@ body {
 /*  */
 
 
-textarea,select,button {
+textarea, input, select,button {
 
     text-align: unset;
-    background-color: green;
+    background-color: gray;
 }
 
 
@@ -24,6 +24,7 @@ textarea,select,button {
     border: 1px solid black; 
     margin: 10px;
     height: 50vh;
+    background: #5e5757;
     /* vertical Height. */
 }
 
@@ -31,7 +32,7 @@ textarea,select,button {
 .pictureBox {
     border: 1px solid black; 
     margin: 10px;
-    
+    background: #5e5757;
 }
 
 
@@ -46,7 +47,7 @@ textarea,select,button {
 
 
 .texttexttext {
-
+    background: #5e5757;
     Width:100%;
     height: 50vh;
 

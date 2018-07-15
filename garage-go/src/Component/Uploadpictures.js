@@ -31,6 +31,7 @@ export default class Form extends React.Component {
 // state = {selectedFile: null}
 
 fileChangedHandler = (event) => {
+    console.log(event.target.files)
   this.setState(
       {
           pictureUpload: event.target.files[0],
@@ -44,6 +45,7 @@ fileChangedHandler = (event) => {
         }
     )
 // above shoves image in page. 
+this.props.handleChange(this.state.pictureUpload);
 console.log(this.state.pictureUpload)
 
 }

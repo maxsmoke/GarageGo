@@ -42,9 +42,10 @@ axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
         console.log(res.data);
       })
 //axios
-
-
-
+// passing data back to parent
+// NSA starts to steal data 
+this.props.handleFormSubmit(this.state);
+// passing form component's state
 
 }
 
@@ -60,35 +61,49 @@ axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
 
 
 
-
 render () {
 return(
 
     <div className = "centerBox">
     <form>
         <input className="formfield" placeholder="Address 1"
-        value={this.state.FirstName}
-         onChange={e => this.setState({ firstName: e.target.value})}
+        value={this.state.FirstName} name="address1"
+         onChange={e => {
+             this.setState({ firstName: e.target.value})
+             this.props.handleTextChange(e);
+            }}
           />
         <br />
         <input className="formfield" placeholder="Address 2"
-        value={this.state.FirstName}
-         onChange={e => this.setState({ lastName: e.target.value})}
+        value={this.state.FirstName} name="address2"
+        onChange={e => {
+            this.setState({ lastName: e.target.value})
+            this.props.handleTextChange(e);
+           }}
           />
         <br />
-        <input className="formfield" placeholder="City"
-        value={this.state.FirstName}
-         onChange={e => this.setState({ email: e.target.value})}
+        <input className="formfield" placeholder="city"
+        value={this.state.FirstName} name="city"
+        onChange={e => {
+            this.setState({ lastName: e.target.value})
+            this.props.handleTextChange(e);
+           }}
           />
         <br />
-        <input className="formfield" placeholder="State"
-        value={this.state.FirstName}
-        onChange={e => this.setState({ Username: e.target.value})}
-         />
+        <input className="formfield" placeholder="state"
+        value={this.state.FirstName} name="state"
+        onChange={e => {
+            this.setState({ lastName: e.target.value})
+            this.props.handleTextChange(e);
+           }}
+          />
         <br />
-        <input className="formfield" placeholder="Zip Code"
-        value={this.state.FirstName}
-         onChange={e => this.setState({ Password: e.target.value})}
+        <input className="formfield" placeholder="zip"
+        value={this.state.FirstName} name="zip"
+        onChange={e => {
+            this.setState({ lastName: e.target.value})
+            this.props.handleTextChange(e);
+           }}
           />
 
 

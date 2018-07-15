@@ -55,5 +55,13 @@ footer{
 
 
 
+.titlesforpage {
+color:red;
+font-family: 'Righteous', cursive;
+font-size: 22px;
+}
 
+#root {
+  background-image: url("https://raw.githubusercontent.com/TyPhyter/BeerHunter/master/assets/images/wood-bg.jpg")
+}
 

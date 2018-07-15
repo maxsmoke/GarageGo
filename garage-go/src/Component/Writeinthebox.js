@@ -15,6 +15,7 @@ export default class Form extends React.Component {
       
         handleChange(event) {
           this.setState({value: event.target.value});
+          this.props.handleTextChange(event);
         }
       
         handleSubmit(event) {
@@ -37,7 +38,7 @@ export default class Form extends React.Component {
 
 
 
-
+//  
 
 
 
@@ -90,7 +91,7 @@ axios.post(`https://jsonplaceholder.typicode.com/users`, { array: arrayUpload })
             <form onSubmit={this.handleSubmit}>
               <label>
     
-                <textarea className = "texttexttext" value={this.state.value} onChange={this.handleChange} />
+                <textarea name="value" onChange={this.handleChange} className = "texttexttext" value={this.state.value}/>
               </label>
               <input type="submit" value="Submit" />
             </form>
