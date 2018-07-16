@@ -61,6 +61,14 @@ class PostGarageSale extends Component {
         [name]: value
       })
     }
+    handleImageChange = imgUrl => {
+      this.setState(
+          {
+              pictureUpload: imgUrl
+            
+            }
+        )
+    }
     render() {
       return (
         <div className="App">
@@ -79,7 +87,7 @@ class PostGarageSale extends Component {
               </div>
               <div className="col s4">
                 <p className="titlesforpage">Upload Images</p>                
-                <Uploadpictures handleFormSubmit={this.handleFormSubmit} handleChange={this.test}/>
+                <Uploadpictures handleFormSubmit={this.handleFormSubmit} imageUploaded={this.handleImageChange}/>
                 <button onClick={this.onSubmit}>BIG SUBMIT</button>
 
                 {/*  THIS PAGE I NEED A HANDLECHANGE FUNCTION. PASS IT AS A PROP. */}

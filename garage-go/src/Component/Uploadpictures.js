@@ -31,13 +31,14 @@ export default class Form extends React.Component {
 // state = {selectedFile: null}
 
 fileChangedHandler = (event) => {
-    console.log(event.target.files)
+    // console.log(event.target.files)
   this.setState(
       {
           pictureUpload: event.target.files[0],
         
         }
     )
+    this.props.imageUploaded(event.target.files[0])
   //above is axios --- go to database.
   this.setState(
       {
@@ -45,8 +46,8 @@ fileChangedHandler = (event) => {
         }
     )
 // above shoves image in page. 
-this.props.handleChange(this.state.pictureUpload);
-console.log(this.state.pictureUpload)
+// this.props.handleChange(this.state.pictureUpload);
+// console.log(this.state.pictureUpload)
 
 }
 
