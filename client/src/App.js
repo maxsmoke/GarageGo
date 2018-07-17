@@ -9,7 +9,7 @@ import GuestPage from './pages/GuestPage.js';
 import MapPage from './pages/MapPage.js';
 import SignInPage from './pages/SignInPage';
 import About from './pages/About.js';
-import PostGarageSale from './pages/PostGarageSale.js';
+import PostGarageSale from './pages/PostGarageSale.js'; 
 
 
 class App extends Component {
