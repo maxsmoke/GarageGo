@@ -21,7 +21,7 @@ class PostGarageSale extends Component {
     state = {
       current: "Here is where you will do the actual post.",
       address1: '',
-      address2: '',
+      Date_of_Garage_Sale: '',
       city: '',
       state: '',
       zip: '',

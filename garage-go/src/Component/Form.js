@@ -74,8 +74,8 @@ return(
             }}
           />
         <br />
-        <input className="formfield" placeholder="Address 2"
-        value={this.state.FirstName} name="address2"
+        <input className="formfield" placeholder="Date_of_Garage_Sale"
+        value={this.state.FirstName} name="Date_of_Garage_Sale"
         onChange={e => {
             this.setState({ lastName: e.target.value})
             this.props.handleTextChange(e);
