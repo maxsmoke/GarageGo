@@ -88,7 +88,7 @@ class PostGarageSale extends Component {
               <div className="col s4">
                 <p className="titlesforpage">Upload Images</p>                
                 <Uploadpictures handleFormSubmit={this.handleFormSubmit} imageUploaded={this.handleImageChange}/>
-                <button onClick={this.onSubmit}>BIG SUBMIT</button>
+                <button onClick={this.onSubmit}>Submit All</button>
 
                 {/*  THIS PAGE I NEED A HANDLECHANGE FUNCTION. PASS IT AS A PROP. */}
                 {/* when any button is clicked I want a green image checkbox to confirm that it went to database correctly */}
