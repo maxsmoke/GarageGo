@@ -22,7 +22,7 @@ class Home extends Component {
                     <p className="Intro">This is where you will find any and all future garage sales in your area.</p>
                     <p>Click down below to learn more</p>
                     <p className="lead">
-                    <Link to={"/LearnMoreTest"}>
+                    <Link to={"/UpcomingEvents"}>
                     <Button onClick ={this.buttonClicked}>Learn More
                     </Button>
                     </Link>

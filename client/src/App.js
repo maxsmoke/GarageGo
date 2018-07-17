@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 // import Jumbotron from "./Jumbotron";
 import Home from './pages/Home';
+import UpcomingEvents from './pages/UpcomingEvents';
 // import LearnMoreTest from './pages/LearnMoreTest';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import GuestPage from './pages/GuestPage.js';
@@ -15,6 +16,18 @@ import PostGarageSale from './pages/PostGarageSale.js';
 class App extends Component {
   render() {
     return (
+
+      <div className="App">
+        <header>
+          <div id="logo">
+            <span className="icon">date_range</span>
+            <span>
+             
+            </span>
+          </div>
+        </header>
+        <main>
+         </main>
    
      <BrowserRouter>
        <Switch>
@@ -25,9 +38,12 @@ class App extends Component {
         <Route exact path="/MapPage" component={MapPage} />
         <Route exact path="/SignInPage" component={SignInPage} />
         <Route exact path="/PostGarageSale" component={PostGarageSale} />
+        <Route exact path="/UpcomingEvents" component={UpcomingEvents} />
       </Switch>
     </BrowserRouter>
-        
+    
+    </div>
+
    
     );
   }
