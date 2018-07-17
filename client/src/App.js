@@ -5,6 +5,11 @@ import './App.css';
 import Home from './pages/Home';
 // import LearnMoreTest from './pages/LearnMoreTest';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import GuestPage from './pages/GuestPage.js';
+import MapPage from './pages/MapPage.js';
+import SignInPage from './pages/SignInPage';
+import About from './pages/About.js';
+import PostGarageSale from './pages/PostGarageSale.js';
 
 
 class App extends Component {
@@ -14,7 +19,12 @@ class App extends Component {
      <BrowserRouter>
        <Switch>
       <Route exact path="/" component={Home} />
-      {/* <Route exact path="/LearnMoreTest" component={LearnMoreTest} /> */}
+     
+        <Route exact path="/About" component={About} />
+        <Route exact path="/GuestPage" component={GuestPage} />
+        <Route exact path="/MapPage" component={MapPage} />
+        <Route exact path="/SignInPage" component={SignInPage} />
+        <Route exact path="/PostGarageSale" component={PostGarageSale} />
       </Switch>
     </BrowserRouter>
         
