@@ -17,7 +17,7 @@ active: true
 
 
 router.get('/', function(req, res, next) {
-    // console.log("/");
+    console.log("/");
     var thisAddress = address.find({},function(err, data){
         console.log(data);
     });
