@@ -3,18 +3,18 @@ import logo from '../logo.svg';
 import '../App.css';
 import Header from '../Component/Header.js';
 import Footer from '../Component/Footer.js';
-
+import Map from '../Component/map/map.js'
 
 class App extends Component {
     render() {
-      return (
+      return ( 
         <div className="App">
   
   
         {/* <RENDER ME HERE !!!!!! you have to render me /> */}
         <Header/>
         {/* deleted this header code because I now have header.js */}
-  
+        <Map />
   
   
             {/* materialize card */}
