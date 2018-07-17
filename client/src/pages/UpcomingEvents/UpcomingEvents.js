@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 // import { Jumbotron, Button } from 'reactstrap';
 //import './Home.css';
-// import './HomeBackground';
-import Calendar  from '../../components/Calendar';
+import Calendar  from '../../components/Calendar/Calendar.js';
 
 
 
@@ -15,7 +14,7 @@ class UpcomingEvents extends Component {
 
                 <h1> Here is a schedule of upcoming garage sales</h1>
                 
-
+                
                  <Calendar />
 
                   
