@@ -11,7 +11,7 @@ import MapPage from './pages/MapPage.js';
 import SignInPage from './pages/SignInPage';
 import About from './pages/About.js';
 import PostGarageSale from './pages/PostGarageSale.js'; 
-
+import TannerMainPage from './pages/TannerMainPage';
 
 class App extends Component {
   render() {
@@ -39,6 +39,8 @@ class App extends Component {
         <Route exact path="/SignInPage" component={SignInPage} />
         <Route exact path="/PostGarageSale" component={PostGarageSale} />
         <Route exact path="/UpcomingEvents" component={UpcomingEvents} />
+        <Route exact path="/TannerMainPage" component={TannerMainPage} />
+
       </Switch>
     </BrowserRouter>
     

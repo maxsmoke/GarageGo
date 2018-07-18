@@ -39,6 +39,14 @@ class Home extends Component {
                     </Link>
                 {/* <GoogleApiWrapper /> */}
                 {/* <EventList /> */}
+                <hr className="my-2" />
+
+                <p>Here is a feed of our live postings</p>
+                                <Link to={"/TannerMainPage"}>
+                    <Button onClick ={this.buttonClicked}>Live Postings
+                    </Button>
+                    </Link>
+
             </div>
 
         )
