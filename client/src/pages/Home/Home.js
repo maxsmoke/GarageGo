@@ -30,6 +30,13 @@ class Home extends Component {
                     </p>
                     <hr className="my-2" />
                 </Jumbotron>
+               
+                <p> If you are planning a garage sale we would like to hear from you!!</p> 
+                <p>Click here to post an upcoming garage sale</p>
+                <Link to={"/PostGarageSale"}>
+                    <Button onClick ={this.buttonClicked}>Post Here
+                    </Button>
+                    </Link>
                 {/* <GoogleApiWrapper /> */}
                 {/* <EventList /> */}
             </div>
